@@ -2,7 +2,7 @@
 
 
 setwd('~/Documents/PhD/') # modify according to local path
-ref_sample <- read.csv('ref_data_sample.csv', stringsAsFactors = F)
+ref_sample <- read.csv('ref_data_sample.csv', stringsAsFactors = F) # the file can be found at https:// www.dropbox.com/s/ rpo48bkzkd6ng2e/ ref_data_sample.csv?dl=0
 
 #clean duplicates 
 df <-   ref_sample[!duplicated(ref_sample[c("ref_id","timestamp_ref", 'ref_value')]),]
